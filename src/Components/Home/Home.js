@@ -1,13 +1,11 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import "../../utils.css";
 import "./Home.css";
-import clipboard from "../../Assets/Project Screenshots/clipboard.jpeg";
-import r3 from "../../Assets/Project Screenshots/R3.png";
-import eCommerce from "../../Assets/Project Screenshots/e-commerce.jpeg";
-import huddle from "../../Assets/Project Screenshots/huddle.jpeg";
-import space from "../../Assets/Project Screenshots/space.jpeg";
-import moz from "../../Assets/Project Screenshots/moz.jpeg";
-import TagsCanvas from "react-tags-canvas";
+import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { letterAnimation } from "../../animation";
 
 export default function Home() {
   useEffect(() => {
@@ -34,10 +32,14 @@ export default function Home() {
       setTimeout(() => {
         popUp1.classList.add("move-pop-up-1");
         popUp2.classList.add("show-pop-up");
+
         setTimeout(() => {
           popUp1.classList.remove("show-pop-up");
-          popUp2.classList.remove("show-pop-up");
-        }, 4000);
+
+          setTimeout(() => {
+            popUp2.classList.remove("show-pop-up");
+          }, 2500);
+        }, 2500);
       }, 2500);
     }, 1000);
 
@@ -50,74 +52,20 @@ export default function Home() {
     const section2Letters = document.querySelectorAll(
       ".section2-heading .letter"
     );
+    const section3Letters = document.querySelectorAll(
+      ".section3-heading .letter"
+    );
     let lettersArr = [];
     lettersArr.push(section1Letters);
     lettersArr.push(section2Letters);
+    lettersArr.push(section3Letters);
 
-    lettersArr.forEach((arr) => {
-      arr.forEach((letter, index) => {
-        setTimeout(() => {
-          letter.classList.add("show-letter");
-          letter.classList.add("animate-enter");
-
-          setTimeout(() => {
-            letter.classList.remove("animate-enter");
-          }, 600);
-        }, index * 100);
-      });
-    });
-
-    letters.forEach((letter) => {
-      letter.addEventListener("mouseover", (e) => {
-        e.target.classList.add("animate");
-        setTimeout(() => {
-          e.target.classList.remove("animate");
-        }, 800);
-      });
-    });
-
-    // Auto Project Scroll
-    let intervalId;
-    let timeoutId;
-    const projects = document.querySelectorAll(".project");
-    projects.forEach((project) => {
-      project.scrollTop = 0;
-
-      project.addEventListener("wheel", (e) => {
-        e.preventDefault();
-      });
-
-      // Start Auto Scroll
-      project.addEventListener("mouseenter", () => {
-        timeoutId = setTimeout(() => {
-          intervalId = setInterval(() => {
-            if (project.scrollTop == project.scrollTopMax) {
-              setTimeout(() => {
-                if (project.scrollTop == project.scrollTopMax) {
-                  project.scrollTop = 0;
-                }
-              }, 2000);
-            }
-            project.scrollTop++;
-          }, 0.25);
-        }, 1000);
-      });
-
-      // Stop Auto Scroll
-      project.addEventListener("mouseleave", () => {
-        clearTimeout(timeoutId);
-        clearInterval(intervalId);
-      });
-
-      project.addEventListener("wheel", (e) => {
-        e.preventDefault();
-      });
-    });
+    letterAnimation(lettersArr, letters);
   }, []);
 
   return (
     <div className="home">
-      <div className="section1">
+      <section className="section1">
         <h1 className="section1-heading heading">
           <span className="letter">H</span>
           <span className="letter">i</span>
@@ -125,9 +73,7 @@ export default function Home() {
           <br />
           <span className="letter">I</span>
           <span className="letter">'</span>
-          <span className="letter">m</span>
-          &nbsp;
-          <span className="letter">S</span>
+          <span className="letter">m</span> <span className="letter">S</span>
           <span className="letter">h</span>
           <span className="letter">o</span>
           <span className="letter">a</span>
@@ -137,9 +83,7 @@ export default function Home() {
           <br />
           <span className="letter">W</span>
           <span className="letter">e</span>
-          <span className="letter">b</span>
-          &nbsp;
-          <span className="letter">D</span>
+          <span className="letter">b</span> <span className="letter">D</span>
           <span className="letter">e</span>
           <span className="letter">v</span>
           <span className="letter">e</span>
@@ -157,7 +101,7 @@ export default function Home() {
         <p className="scroll-down right-text">
           <span className="scroll-down-text">scroll down</span>
         </p>
-      </div>
+      </section>
       <section className="section2">
         <h1 className="section2-heading heading">
           <span className="letter">M</span>
@@ -191,50 +135,64 @@ export default function Home() {
             href="https://moz-clone.vercel.app/"
             className="project project1"
             target="_blank"
-          >
-            <img src={moz} />
-          </a>
+          ></a>
           <a
             href="https://space-tourism-website-hazel.vercel.app/"
             className="project project2"
             target="_blank"
-          >
-            <img src={space} />
-          </a>
+          ></a>
           <a
             href="https://e-commerce-website-eosin.vercel.app/"
             className="project project3"
             target="_blank"
-          >
-            <img src={eCommerce} />
-          </a>
+          ></a>
           <a
             href="https://huddle-landing-page-gilt.vercel.app/"
             className="project project4"
             target="_blank"
-          >
-            <img src={huddle} />
-          </a>
+          ></a>
           <a
             href="https://flocked-landing-clone.vercel.app/"
             className="project project5"
             target="_blank"
-          >
-            <img src={r3} />
-          </a>
+          ></a>
           <a
             href="https://r3-com-clone.vercel.app/"
             className="project project6"
             target="_blank"
-          >
-            <img src={clipboard} />
-          </a>
+          ></a>
         </section>
       </section>
-      <div class="pop-up pop-up-1">
+      <section className="section3">
+        <h1 className="section3-heading">Contact</h1>
+        <p className="section3-para">
+          Have a question or want to work together?
+        </p>
+        <div className="socials">
+          <a
+            href="https://www.facebook.com/profile.php?id=100006041924841"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faGithub} className="social-icon" />
+          </a>
+          <a
+            href="https://github.com/ShibCode?tab=repositories"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faFacebook} className="social-icon" />
+          </a>
+          <a
+            href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=DmwnWrRmTgRLtjRBqhjZpjGBKbBrrMflDlXXjbQfnMzpzckqjTqsZjWHjQRRzkmgkSGSGhBHnPBB"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faEnvelope} className="social-icon" />
+          </a>
+        </div>
+      </section>
+      <div className="pop-up pop-up-1">
         Please note that this design is not mine
       </div>
-      <div class="pop-up pop-up-2">Only the code</div>
+      <div className="pop-up pop-up-2">Only the code</div>
     </div>
   );
 }

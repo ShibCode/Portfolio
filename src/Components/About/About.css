@@ -1,0 +1,25 @@
+.about {
+  background-color: rgba(29, 29, 29, 1);
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  padding-left: calc(150px + 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.about-heading {
+  color: #08fdd8;
+  font-family: Inconsolata;
+  font-size: 86px;
+}
+.about-para {
+  color: white;
+  max-width: 500px;
+  line-height: 26px;
+}

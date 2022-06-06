@@ -1,0 +1,110 @@
+.heading {
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 64px;
+  position: relative;
+  width: fit-content;
+}
+
+.heading::before {
+  content: "<h1>";
+  font-family: "La Belle Aurore", cursive;
+  color: #909096;
+  font-size: 18px;
+  opacity: 0.3;
+  font-weight: normal;
+  position: absolute;
+  top: -40px;
+  left: -15px;
+  opacity: 0;
+  animation: headingOpacity 0.5s ease 0s 1 forwards;
+}
+
+.heading::after {
+  content: "</h1>";
+  font-family: "La Belle Aurore", cursive;
+  color: #909096;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  bottom: -40px;
+  left: -15px;
+  opacity: 0;
+  animation: headingOpacity 0.5s ease 0s 1 forwards;
+}
+
+.para {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  margin: 20px 0;
+}
+
+.para::before {
+  content: "<p>";
+  font-family: "La Belle Aurore", cursive;
+  color: #909096;
+  font-size: 18px;
+  opacity: 0.3;
+  position: absolute;
+  top: -25px;
+  left: -15px;
+}
+
+.para::after {
+  content: "</p>";
+  font-family: "La Belle Aurore", cursive;
+  color: #909096;
+  font-size: 18px;
+  opacity: 0.3;
+  position: absolute;
+  bottom: -30px;
+  left: -15px;
+}
+
+.aqua-btn {
+  border: 1px solid #08fdd8;
+  color: #08fdd8;
+  background-color: transparent;
+  width: fit-content;
+  font-size: 17px;
+  letter-spacing: 4px;
+  padding: 0.75rem 3rem;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.aqua-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #08fdd8;
+  transition: all 0.2s;
+  z-index: -1;
+}
+
+.aqua-btn:hover::before {
+  transform: scaleX(1);
+}
+
+.aqua-btn:hover {
+  color: rgba(29, 29, 29, 1);
+}
+
+.animate {
+  animation: letterJump 0.8s ease 0s 1 forwards;
+}
+
+@media screen and (max-width: 860px) {
+  .heading {
+    font-size: 64px;
+    line-height: 42px;
+  }
+}
