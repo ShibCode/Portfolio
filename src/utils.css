@@ -37,6 +37,7 @@
   font-family: "Open Sans", sans-serif;
   position: relative;
   margin: 20px 0;
+  line-height: 24px;
 }
 
 .para::before {
@@ -46,7 +47,7 @@
   font-size: 18px;
   opacity: 0.3;
   position: absolute;
-  top: -25px;
+  top: -20px;
   left: -15px;
 }
 
@@ -57,7 +58,7 @@
   font-size: 18px;
   opacity: 0.3;
   position: absolute;
-  bottom: -30px;
+  bottom: -25px;
   left: -15px;
 }
 
@@ -65,15 +66,18 @@
   border: 1px solid #08fdd8;
   color: #08fdd8;
   background-color: transparent;
-  width: fit-content;
   font-size: 17px;
   letter-spacing: 4px;
-  padding: 0.75rem 3rem;
   transition: all 0.2s ease-in-out;
   position: relative;
   z-index: 1;
   opacity: 1;
   cursor: pointer;
+  width: 215px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aqua-btn::before {
@@ -106,5 +110,28 @@
   .heading {
     font-size: 64px;
     line-height: 42px;
+  }
+  .heading::before {
+    top: -30px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .heading {
+    font-size: 48px;
+    line-height: 32px;
+  }
+  .heading::before {
+    top: -22px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .heading {
+    font-size: 38px;
+    line-height: 22px;
+  }
+  .aqua-btn {
+    width: 175px;
+    height: 40px;
+    font-size: 14px;
   }
 }

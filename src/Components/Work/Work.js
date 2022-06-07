@@ -100,11 +100,11 @@ const projects = [
     projectImg: statsPreviewCard,
     projectLink: "https://stats-preview-card-zeta.vercel.app",
   },
-  // {
-  //   projectName: "qr-code-component",
-  //   projectImg: qrCodeComponent,
-  //   projectLink: "https://qr-code-tau.vercel.app",
-  // },
+  {
+    projectName: "qr-code-component",
+    projectImg: qrCodeComponent,
+    projectLink: "https://qr-code-tau.vercel.app",
+  },
 ];
 
 export default function Work() {

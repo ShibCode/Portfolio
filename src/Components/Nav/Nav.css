@@ -12,7 +12,7 @@
   width: 150px;
   background-color: #181818;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   z-index: 10;
   transition: all 0.2s ease;
 }
@@ -68,8 +68,8 @@
   background-color: hsla(0, 0%, 0%, 0.2);
   color: white;
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 10px;
+  right: 10px;
   border-radius: 6px;
   cursor: pointer;
   z-index: 11;
@@ -85,12 +85,30 @@
 }
 .slide-nav {
   top: 0 !important;
+  opacity: 1 !important;
+}
+.nav-socials {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.nav-social {
+  color: white;
+  font-size: 20px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  color: #909096;
+}
+.nav-social:hover {
+  color: #08fdd8;
 }
 
 @media screen and (max-width: 1080px) {
   .nav-bar {
     width: 100%;
     top: -100%;
+    opacity: 0;
   }
   .nav-bar-top {
     padding: 3rem 0;

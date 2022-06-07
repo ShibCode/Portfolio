@@ -9,6 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 3rem;
 }
 .skill-left {
   display: flex;
@@ -40,12 +41,13 @@
   color: white;
   font-family: sans-serif;
   font-weight: 600;
+  width: 50%;
 }
 .skill-bar {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  width: 600px;
+  width: 100%;
 }
 .bar {
   width: 100%;
@@ -76,4 +78,44 @@
 .react::before {
   width: 70%;
   background-color: #08fdd8;
+}
+
+@media screen and (max-width: 1080px) {
+  .skill {
+    padding: 5rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .skill-left,
+  .skill-right,
+  .skill-bar {
+    width: 100%;
+  }
+  .skill-para {
+    width: 100%;
+    max-width: 1080px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .skill {
+    padding: 5rem 3rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .skill-left {
+    gap: 0.5rem;
+  }
+  .skill-heading {
+    font-size: 44px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .skill {
+    padding: 5rem 2rem;
+  }
+  .skill-heading {
+    font-size: 38px;
+    line-height: 22px;
+  }
 }

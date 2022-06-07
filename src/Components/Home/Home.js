@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../../utils.css";
 import "./Home.css";
 import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { letterAnimation } from "../../animation";
 
@@ -98,9 +98,14 @@ export default function Home() {
         <p className="scroll-down left-text">
           <span className="scroll-down-text">scroll down</span>
         </p>
+        <FontAwesomeIcon icon={faArrowDown} className="arrow-down left-arrow" />
         <p className="scroll-down right-text">
           <span className="scroll-down-text">scroll down</span>
         </p>
+        <FontAwesomeIcon
+          icon={faArrowDown}
+          className="arrow-down right-arrow"
+        />
       </section>
       <section className="section2">
         <h1 className="section2-heading heading">
@@ -137,7 +142,7 @@ export default function Home() {
             target="_blank"
           ></a>
           <a
-            href="https://space-tourism-website-hazel.vercel.app/"
+            href="https://r3-com-clone.vercel.app/"
             className="project project2"
             target="_blank"
           ></a>
@@ -147,17 +152,17 @@ export default function Home() {
             target="_blank"
           ></a>
           <a
-            href="https://huddle-landing-page-gilt.vercel.app/"
+            href="https://space-tourism-website-hazel.vercel.app/"
             className="project project4"
             target="_blank"
           ></a>
           <a
-            href="https://flocked-landing-clone.vercel.app/"
+            href="https://clipboard-landing-page-shibcode.vercel.app/"
             className="project project5"
             target="_blank"
           ></a>
           <a
-            href="https://r3-com-clone.vercel.app/"
+            href="https://huddle-landing-page-gilt.vercel.app/"
             className="project project6"
             target="_blank"
           ></a>
@@ -170,13 +175,13 @@ export default function Home() {
         </p>
         <div className="socials">
           <a
-            href="https://www.facebook.com/profile.php?id=100006041924841"
+            href="https://github.com/ShibCode?tab=repositories"
             target="_blank"
           >
             <FontAwesomeIcon icon={faGithub} className="social-icon" />
           </a>
           <a
-            href="https://github.com/ShibCode?tab=repositories"
+            href="https://www.facebook.com/profile.php?id=100006041924841"
             target="_blank"
           >
             <FontAwesomeIcon icon={faFacebook} className="social-icon" />
