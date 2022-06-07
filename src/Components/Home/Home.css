@@ -219,6 +219,7 @@
   position: relative;
   cursor: pointer;
   background-position: top;
+  transition: all 0s ease;
   transition-delay: 1.5s;
 }
 
@@ -405,7 +406,7 @@
   }
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 700px) {
   .scroll-down {
     display: none;
   }
@@ -549,5 +550,57 @@
   }
   .section2-heading {
     font-size: 40px;
+  }
+}
+@media screen and (hover: hover) {
+  .project {
+    text-decoration: none;
+  }
+  .project::before {
+    content: "Hover to view the page";
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 0 0 16px 16px;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    transition: all 2s ease;
+    transition-delay: 1.5s;
+  }
+  .project:hover::before {
+    top: -100%;
+  }
+  .project::after {
+    content: "Click to go the page";
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 0 0 16px 16px;
+    height: fit-content;
+    position: absolute;
+    top: -100%;
+    transition: all 2s ease;
+    transition-delay: 1.5s;
+  }
+  .project:hover::after {
+    top: 0;
+  }
+}
+@media screen and (hover: none) {
+  .project::after {
+    content: "Click to go the page";
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 0 0 16px 16px;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    transition: all 2s ease;
+    transition-delay: 1.5s;
   }
 }

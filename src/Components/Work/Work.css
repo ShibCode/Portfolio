@@ -60,6 +60,9 @@
 .work-project-container:hover .overlay {
   opacity: 0.4;
 }
+.work-project-container:hover .overlay {
+  opacity: 0.4;
+}
 
 /* Transition Duration */
 
@@ -138,5 +141,20 @@
     width: clamp(75px, 18.75vw, 100px);
     height: clamp(75px, 18.75vw, 100px);
     font-size: 16px;
+  }
+}
+@media screen and (hover: none) {
+  .work-project-container::before {
+    content: "Click to view the project";
+    border-radius: 0 0 24px 24px;
+    top: 0;
+    left: 50%;
+    padding: 10px 20px;
+    height: fit-content;
+    width: 75%;
+    transform: translateX(-50%) scale(1);
+  }
+  .overlay {
+    opacity: 0.4;
   }
 }
