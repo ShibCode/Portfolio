@@ -203,7 +203,9 @@
   justify-content: center;
   margin: 3rem 0;
 }
-
+.project::-webkit-scrollbar {
+  display: none;
+}
 .project {
   background-repeat: no-repeat;
   background-size: cover;
