@@ -9,6 +9,8 @@ import { letterAnimation } from "../../animation";
 
 export default function Home() {
   useEffect(() => {
+    document.title = "Shoaib | Front End Developer";
+
     document.querySelector(".section1").scrollIntoView();
 
     // Pop Ups

@@ -4,6 +4,8 @@ import { letterAnimation } from "../../animation";
 
 export default function Skill() {
   useEffect(() => {
+    document.title = "Skills and Experience";
+
     const letters = document.querySelectorAll(".letter");
     const letterArr = [letters];
     letterAnimation(letterArr, letters);

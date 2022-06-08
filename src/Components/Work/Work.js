@@ -108,6 +108,8 @@ const projects = [
 ];
 
 export default function Work() {
+  document.title = "My work";
+
   return (
     <div className="work">
       {projects.map((project, index) => {
