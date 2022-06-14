@@ -35,8 +35,8 @@ export default function Skill() {
         </h1>
         <p className="para skill-para">
           I have started off my web development journey nearly 4 months ago. I
-          have made several projects for practicing my skills through cloning a
-          website and taking on various different challenges from Front End
+          have made several projects for practicing my skills through cloning
+          websites and taking on various different challenges from Front End
           Mentor.
           <br /> <br />I create successful responsive websites that are fast and
           easy to use. The main area of my expertise is front-end development,
@@ -45,16 +45,13 @@ export default function Skill() {
           <br />
           <br />
           Vist my{" "}
-          <a
-            href="https://github.com/ShibCode?tab=repositories"
-            target="_blank"
-          >
+          <a href="https://github.com/ShibCode?tab=repositories" target="blank">
             Github
           </a>{" "}
           for viewing my work or just{" "}
           <a
             href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=DmwnWrRmTgRLtjRBqhjZpjGBKbBrrMflDlXXjbQfnMzpzckqjTqsZjWHjQRRzkmgkSGSGhBHnPBB"
-            target="_blank"
+            target="blank"
           >
             contact
           </a>{" "}

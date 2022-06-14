@@ -65,21 +65,18 @@ export default function Nav() {
           </Link>
         </div>
         <div className="nav-socials">
-          <a
-            href="https://github.com/ShibCode?tab=repositories"
-            target="_blank"
-          >
+          <a href="https://github.com/ShibCode?tab=repositories" target="blank">
             <FontAwesomeIcon icon={faGithub} className="nav-social" />
           </a>
           <a
             href="https://www.facebook.com/profile.php?id=100006041924841"
-            target="_blank"
+            target="blank"
           >
             <FontAwesomeIcon icon={faFacebook} className="nav-social" />
           </a>
           <a
             href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=DmwnWrRmTgRLtjRBqhjZpjGBKbBrrMflDlXXjbQfnMzpzckqjTqsZjWHjQRRzkmgkSGSGhBHnPBB"
-            target="_blank"
+            target="blank"
           >
             <FontAwesomeIcon icon={faEnvelope} className="nav-social" />
           </a>

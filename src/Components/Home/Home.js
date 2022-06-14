@@ -141,32 +141,32 @@ export default function Home() {
           <a
             href="https://moz-clone.vercel.app/"
             className="project project1"
-            target="_blank"
+            target="blank"
           ></a>
           <a
             href="https://r3-com-clone.vercel.app/"
             className="project project2"
-            target="_blank"
+            target="blank"
           ></a>
           <a
             href="https://e-commerce-website-eosin.vercel.app/"
             className="project project3"
-            target="_blank"
+            target="blank"
           ></a>
           <a
             href="https://space-tourism-website-hazel.vercel.app/"
             className="project project4"
-            target="_blank"
+            target="blank"
           ></a>
           <a
             href="https://clipboard-landing-page-shibcode.vercel.app/"
             className="project project5"
-            target="_blank"
+            target="blank"
           ></a>
           <a
             href="https://huddle-landing-page-gilt.vercel.app/"
             className="project project6"
-            target="_blank"
+            target="blank"
           ></a>
         </section>
       </section>
@@ -176,21 +176,18 @@ export default function Home() {
           Have a question or want to work together?
         </p>
         <div className="socials">
-          <a
-            href="https://github.com/ShibCode?tab=repositories"
-            target="_blank"
-          >
+          <a href="https://github.com/ShibCode?tab=repositories" target="blank">
             <FontAwesomeIcon icon={faGithub} className="social-icon" />
           </a>
           <a
             href="https://www.facebook.com/profile.php?id=100006041924841"
-            target="_blank"
+            target="blank"
           >
             <FontAwesomeIcon icon={faFacebook} className="social-icon" />
           </a>
           <a
-            href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=DmwnWrRmTgRLtjRBqhjZpjGBKbBrrMflDlXXjbQfnMzpzckqjTqsZjWHjQRRzkmgkSGSGhBHnPBB"
-            target="_blank"
+            href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=GTvVlcSHxTsLDsCHTBwsTPstvqrgNWXCZTDqbqjFsnlltNpsbVLPpwDcggbkBZXgNxQltpghpqcpm"
+            target="blank"
           >
             <FontAwesomeIcon icon={faEnvelope} className="social-icon" />
           </a>
