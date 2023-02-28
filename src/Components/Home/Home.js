@@ -60,7 +60,15 @@ export default function Home() {
           <span className="letter">r</span>
         </h1>
         <h4 className="section1-title">Front End Developer</h4>
-        <button className="aqua-btn contact-btn">Contact me!</button>
+        <button className="aqua-btn contact-btn">
+          <a
+            href="https://mail.google.com/mail/u/0/?to=shoaibafzaal1234@gmail.com&fs=1&tf=cm"
+            style={{ color: "inherit", textDecoration: "none" }}
+            target="blank"
+          >
+            Contact me!
+          </a>
+        </button>
         <p className="scroll-down left-text">
           <span className="scroll-down-text">scroll down</span>
         </p>
@@ -134,7 +142,7 @@ export default function Home() {
             <FontAwesomeIcon icon={faFacebook} className="social-icon" />
           </a>
           <a
-            href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=DmwnWrRmTgRLtjRBqhjZpjGBKbBrrMflDlXXjbQfnMzpzckqjTqsZjWHjQRRzkmgkSGSGhBHnPBB"
+            href="https://mail.google.com/mail/u/0/?to=shoaibafzaal1234@gmail.com&fs=1&tf=cm"
             target="blank"
           >
             <FontAwesomeIcon icon={faEnvelope} className="social-icon" />

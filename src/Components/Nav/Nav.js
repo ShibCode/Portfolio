@@ -75,7 +75,7 @@ export default function Nav() {
             <FontAwesomeIcon icon={faFacebook} className="nav-social" />
           </a>
           <a
-            href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=DmwnWrRmTgRLtjRBqhjZpjGBKbBrrMflDlXXjbQfnMzpzckqjTqsZjWHjQRRzkmgkSGSGhBHnPBB"
+            href="https://mail.google.com/mail/u/0/?to=shoaibafzaal1234@gmail.com&fs=1&tf=cm"
             target="blank"
           >
             <FontAwesomeIcon icon={faEnvelope} className="nav-social" />

@@ -50,7 +50,7 @@ export default function Skill() {
           </a>{" "}
           for viewing my work or just{" "}
           <a
-            href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=DmwnWrRmTgRLtjRBqhjZpjGBKbBrrMflDlXXjbQfnMzpzckqjTqsZjWHjQRRzkmgkSGSGhBHnPBB"
+            href="https://mail.google.com/mail/u/0/?to=shoaibafzaal1234@gmail.com&fs=1&tf=cm"
             target="blank"
           >
             contact
