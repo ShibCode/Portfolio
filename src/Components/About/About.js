@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
+import { letterAnimation } from "../../utils/animation";
 import "./About.css";
-import { letterAnimation } from "../../animation";
 
 export default function About() {
   useEffect(() => {

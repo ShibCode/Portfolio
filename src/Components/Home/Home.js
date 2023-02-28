@@ -1,49 +1,19 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../../utils.css";
-import "./Home.css";
 import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { letterAnimation } from "../../animation";
+import { letterAnimation } from "../../utils/animation";
+import projects from "../../projects.json";
+import getTransitionDuration from "../../utils/getTransitionDuration";
+import "./Home.css";
+import "../../utils.css";
 
 export default function Home() {
   useEffect(() => {
     document.title = "Shoaib | Front End Developer";
 
     document.querySelector(".section1").scrollIntoView();
-
-    // Pop Ups
-
-    const popUp1 = document.querySelector(".pop-up-1");
-    const popUp2 = document.querySelector(".pop-up-2");
-    const allPopUps = document.querySelectorAll(".pop-up");
-
-    allPopUps.forEach((item) => {
-      item.addEventListener("click", () => {
-        item.classList.remove("show-pop-up");
-        if (!popUp2.classList.contains("show-pop-up")) {
-          popUp1.classList.remove("move-pop-up-1");
-        }
-      });
-    });
-
-    setTimeout(() => {
-      popUp1.classList.add("show-pop-up");
-
-      setTimeout(() => {
-        popUp1.classList.add("move-pop-up-1");
-        popUp2.classList.add("show-pop-up");
-
-        setTimeout(() => {
-          popUp1.classList.remove("show-pop-up");
-
-          setTimeout(() => {
-            popUp2.classList.remove("show-pop-up");
-          }, 2500);
-        }, 2500);
-      }, 2500);
-    }, 1000);
 
     // Letter Animations
 
@@ -54,13 +24,7 @@ export default function Home() {
     const section2Letters = document.querySelectorAll(
       ".section2-heading .letter"
     );
-    const section3Letters = document.querySelectorAll(
-      ".section3-heading .letter"
-    );
-    let lettersArr = [];
-    lettersArr.push(section1Letters);
-    lettersArr.push(section2Letters);
-    lettersArr.push(section3Letters);
+    const lettersArr = [section1Letters, section2Letters];
 
     letterAnimation(lettersArr, letters);
   }, []);
@@ -138,36 +102,20 @@ export default function Home() {
           </Link>
         </div>
         <section className="projects-gallery">
-          <a
-            href="https://moz-clone.vercel.app/"
-            className="project project1"
-            target="blank"
-          ></a>
-          <a
-            href="https://r3-com-clone.vercel.app/"
-            className="project project2"
-            target="blank"
-          ></a>
-          <a
-            href="https://e-commerce-website-eosin.vercel.app/"
-            className="project project3"
-            target="blank"
-          ></a>
-          <a
-            href="https://space-tourism-website-hazel.vercel.app/"
-            className="project project4"
-            target="blank"
-          ></a>
-          <a
-            href="https://clipboard-landing-page-shibcode.vercel.app/"
-            className="project project5"
-            target="blank"
-          ></a>
-          <a
-            href="https://huddle-landing-page-gilt.vercel.app/"
-            className="project project6"
-            target="blank"
-          ></a>
+          {projects.slice(0, 6).map(({ projectImg, projectLink }, index) => {
+            return (
+              <a
+                key={index}
+                href={projectLink}
+                className="project"
+                style={{
+                  backgroundImage: `url('${projectImg}')`,
+                  transitionDuration: getTransitionDuration(projectImg),
+                }}
+                target="blank"
+              ></a>
+            );
+          })}
         </section>
       </section>
       <section className="section3">
@@ -186,17 +134,13 @@ export default function Home() {
             <FontAwesomeIcon icon={faFacebook} className="social-icon" />
           </a>
           <a
-            href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=GTvVlcSHxTsLDsCHTBwsTPstvqrgNWXCZTDqbqjFsnlltNpsbVLPpwDcggbkBZXgNxQltpghpqcpm"
+            href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=DmwnWrRmTgRLtjRBqhjZpjGBKbBrrMflDlXXjbQfnMzpzckqjTqsZjWHjQRRzkmgkSGSGhBHnPBB"
             target="blank"
           >
             <FontAwesomeIcon icon={faEnvelope} className="social-icon" />
           </a>
         </div>
       </section>
-      <div className="pop-up pop-up-1">
-        Please note that this design is not mine
-      </div>
-      <div className="pop-up pop-up-2">Only the code</div>
     </div>
   );
 }

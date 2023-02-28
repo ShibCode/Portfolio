@@ -33,6 +33,22 @@
 .skill a {
   color: #08fdd8;
   text-decoration: none;
+  position: relative;
+}
+.skill a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: right;
+  background-color: #08fdd8;
+  transition: transform 0.2s;
+}
+.skill a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 .skill-right {
   display: flex;
@@ -72,15 +88,15 @@
   background-color: rgb(255, 34, 83);
 }
 .js::before {
-  width: 70%;
+  width: 75%;
   background-color: rgb(210, 108, 213);
 }
 .react::before {
-  width: 70%;
+  width: 75%;
   background-color: #08fdd8;
 }
 
-@media screen and (max-width: 1080px) {
+@media (max-width: 1080px) {
   .skill {
     padding: 5rem;
     flex-direction: column;
@@ -96,21 +112,28 @@
     max-width: 1080px;
   }
 }
-@media screen and (max-width: 720px) {
+@media (max-width: 720px) {
   .skill {
     padding: 5rem 3rem;
   }
 }
-@media screen and (max-width: 440px) {
+@media (max-width: 440px) {
   .skill-left {
     gap: 0.5rem;
   }
   .skill-heading {
     font-size: 44px;
     line-height: 26px;
+    margin-bottom: 15px;
+  }
+  .skill-heading::before {
+    top: -18px;
+  }
+  .skill-heading::after {
+    bottom: -30px;
   }
 }
-@media screen and (max-width: 340px) {
+@media (max-width: 340px) {
   .skill {
     padding: 5rem 2rem;
   }

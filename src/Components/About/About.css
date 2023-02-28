@@ -18,8 +18,50 @@
   font-family: Inconsolata;
   font-size: 86px;
 }
+.about-heading::after {
+  bottom: -42px;
+}
 .about-para {
   color: white;
   max-width: 500px;
   line-height: 26px;
+}
+
+@media (max-width: 1080px) {
+  .about {
+    padding: 5rem;
+  }
+  .about-heading {
+    font-size: 62px;
+  }
+  .about-heading::before {
+    top: -22px;
+  }
+  .about-heading::after {
+    bottom: -35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .about-heading {
+    font-size: 48px;
+  }
+  .about-heading::before {
+    top: -18px;
+  }
+  .about-heading::after {
+    bottom: -25px;
+  }
+}
+
+@media (max-width: 340px) {
+  .about {
+    padding: 2rem;
+  }
 }

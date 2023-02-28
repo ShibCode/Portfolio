@@ -1,0 +1,94 @@
+[
+    {
+        "projectImg": "/Project Screenshots/promax.jpeg",
+        "projectLink": "https://promax.vercel.app/"
+    },
+    {
+        "projectImg": "/Project Screenshots/uniswap.jpeg",
+        "projectLink": "https://uni-swap-eight.vercel.app/"
+    },
+    {
+        "projectImg": "/Project Screenshots/soilddao.jpeg",
+        "projectLink": "https://soild-dao.vercel.app/"
+    },
+    {
+        "projectImg": "/Project Screenshots/buddhalo.jpeg",
+        "projectLink": "https://buddhalo.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/bcluxury.jpeg",
+        "projectLink": "https://bc-luxury-clone.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/pints.jpeg",
+        "projectLink": "https://friends-bay.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/e-commerce.jpeg",
+        "projectLink": "https://e-commerce-website-eosin.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/space.jpeg",
+        "projectLink": "https://space-tourism-website-hazel.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/moz.jpeg",
+        "projectLink": "https://moz-clone.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/R3.png",
+        "projectLink": "https://r3-com-clone.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/flocked.jpeg",
+        "projectLink": "https://flocked-landing-clone.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/clipboard.jpeg",
+        "projectLink": "https://clipboard-landing-page-shibcode.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/fylo.jpeg",
+        "projectLink": "https://fylo-landing-page-tawny.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/huddle.jpeg",
+        "projectLink": "https://huddle-landing-page-gilt.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/grid-component.jpeg",
+        "projectLink": "https://testimonial-grid-section-umber.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/nft-component.jpeg",
+        "projectLink": "https://nft-preview-card-shibcode.vercel.app"
+    },
+    {
+      "projectImg": "/Project Screenshots/data-storage-component.jpeg",
+      "projectLink": "https://data-storage-component-iota.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/dropdown.jpeg",
+        "projectLink": "https://intro-section-with-dropdown.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/order-summary.jpeg",
+        "projectLink": "https://order-summary-five-chi.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/price-component.jpeg",
+        "projectLink": "https://single-price-grid-component-shibcode.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/rating-component.jpeg",
+        "projectLink": "https://rating-component-five.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/stats-preview-card.jpeg",
+        "projectLink": "https://stats-preview-card-zeta.vercel.app"
+    },
+    {
+        "projectImg": "/Project Screenshots/qr-code-component.jpeg",
+        "projectLink": "https://qr-code-tau.vercel.app"
+    }
+]

@@ -3,31 +3,11 @@
 .home {
   background: rgba(29, 29, 29, 1);
   min-height: 100vh;
-  margin-left: 150px;
+  padding-left: 150px;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.pop-up {
-  position: fixed;
-  bottom: 50px;
-  right: -100%;
-  width: 250px;
-  font-family: "Open Sans", sans-serif;
-  background-color: black;
-  transition: all 0.4s;
-  padding: 16px;
-  z-index: 10;
-}
-
-.show-pop-up {
-  right: 50px;
-}
-
-.move-pop-up-1 {
-  bottom: 110px;
 }
 
 /* Section 1 Styling */
@@ -78,9 +58,8 @@
 }
 
 .section1-heading::after {
-  left: auto;
+  left: auto !important;
   bottom: -25px !important;
-  right: -50px;
 }
 
 .section1-title {
@@ -168,7 +147,7 @@
 
 .section2-heading::after {
   left: -15px;
-  bottom: -40px;
+  bottom: -45px !important;
 }
 
 .section2-div {
@@ -218,39 +197,8 @@
   scrollbar-width: none;
   position: relative;
   cursor: pointer;
-  background-position: top;
-  transition: all 0s ease;
-  transition-delay: 1.5s;
-}
-
-.project1 {
-  background-image: url("../../Assets/Project Screenshots/moz.jpeg");
-  transition-duration: 90s;
-}
-
-.project2 {
-  background-image: url("../../Assets/Project Screenshots/R3.png");
-  transition-duration: 73.47342398022249s;
-}
-
-.project3 {
-  background-image: url("../../Assets/Project Screenshots/e-commerce.jpeg");
-  transition-duration: 10.556242274412854s;
-}
-
-.project4 {
-  background-image: url("../../Assets/Project Screenshots/space.jpeg");
-  transition-duration: 9.159456118665018s;
-}
-
-.project5 {
-  background-image: url("../../Assets/Project Screenshots/clipboard.jpeg");
-  transition-duration: 55.88380716934487s;
-}
-
-.project6 {
-  background-image: url("../../Assets/Project Screenshots/huddle.jpeg");
-  transition-duration: 46.600741656365884s;
+  transition: all ease;
+  transition-delay: 0.5s;
 }
 
 .project:hover {
@@ -318,6 +266,11 @@
 .social-icon {
   font-size: 42px;
   color: white;
+  transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+  color: #08fdd8;
 }
 
 .email-para {
@@ -406,7 +359,7 @@
   }
 }
 
-@media screen and (max-height: 700px) {
+@media (max-height: 700px) {
   .scroll-down {
     display: none;
   }
@@ -414,15 +367,12 @@
     display: none;
   }
 }
-@media screen and (max-width: 1080px) {
+@media (max-width: 1080px) {
   .home {
-    margin-left: 0;
+    padding-left: 0;
   }
   .left-text {
     left: -10px;
-  }
-  .show-pop-up {
-    right: 25px;
   }
   .section2-para {
     width: 90%;
@@ -435,7 +385,7 @@
     left: 28px;
   }
 }
-@media screen and (max-width: 860px) {
+@media (max-width: 860px) {
   .contact-btn {
     margin-top: 1rem;
   }
@@ -465,7 +415,7 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 792px) {
+@media (max-width: 792px) {
   .projects-gallery {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
@@ -474,7 +424,7 @@
     height: 300px;
   }
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .section1 {
     padding: 2.5rem;
   }
@@ -486,7 +436,7 @@
     border-right: 200vw solid transparent;
   }
 }
-@media screen and (max-width: 550px) {
+@media (max-width: 550px) {
   .section1-heading .letter:is(:nth-child(6), :nth-child(3), :nth-child(14)) {
     margin: 0 -5px;
   }
@@ -512,12 +462,16 @@
     height: 250px;
   }
 }
-@media screen and (max-width: 447px) {
+@media (max-width: 447px) {
   .project {
     height: 400px;
   }
 }
-@media screen and (max-width: 430px) {
+@media (max-width: 430px) {
+  .hammenu-btn {
+    top: 10px;
+    right: 10px;
+  }
   .section2 {
     gap: 1rem;
     padding: 5rem 0 0;
@@ -543,7 +497,7 @@
     font-size: 46px;
   }
 }
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
   .section1-heading {
     font-size: 34px;
     line-height: 18px;
@@ -552,7 +506,7 @@
     font-size: 40px;
   }
 }
-@media screen and (hover: hover) {
+@media (hover: hover) {
   .project {
     text-decoration: none;
   }
@@ -589,7 +543,7 @@
     top: 0;
   }
 }
-@media screen and (hover: none) {
+@media (hover: none) {
   .project::after {
     content: "Click to go the page";
     color: white;
@@ -602,5 +556,8 @@
     top: 0;
     transition: all 2s ease;
     transition-delay: 1.5s;
+  }
+  .overlay {
+    display: none;
   }
 }

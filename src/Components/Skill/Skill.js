@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
+import { letterAnimation } from "../../utils/animation";
 import "./Skill.css";
-import { letterAnimation } from "../../animation";
 
 export default function Skill() {
   useEffect(() => {
@@ -9,7 +9,7 @@ export default function Skill() {
     const letters = document.querySelectorAll(".letter");
     const letterArr = [letters];
     letterAnimation(letterArr, letters);
-  });
+  }, []);
 
   return (
     <div className="skill">

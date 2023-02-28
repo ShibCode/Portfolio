@@ -18,12 +18,14 @@
 .work-project {
   width: 100%;
   transition: all 0s ease;
-  transition-delay: 1.5s;
+  transition-delay: 0.5s;
 }
 .work-project-container:hover .work-project {
   transform: translateY(calc(-100% + var(--project-height)));
 }
 .work-project-container::before {
+  --scale: 0;
+
   content: "View Project";
   display: flex;
   justify-content: center;
@@ -39,91 +41,32 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(var(--scale));
   z-index: 10;
   transition: all 0.25s ease;
   color: black;
 }
 .work-project-container:hover::before {
-  transform: translate(-50%, -50%) scale(1);
+  --scale: 1;
 }
 .overlay {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  z-index: 1;
   background-color: black;
+  inset: 0;
   opacity: 0;
+  z-index: 1;
   transition: all 0.25s ease;
 }
 .work-project-container:hover .overlay {
   opacity: 0.4;
 }
-.work-project-container:hover .overlay {
-  opacity: 0.4;
-}
 
-/* Transition Duration */
-
-.clipboard {
-  transition-duration: 55.88380716934487s;
-}
-.storage-component {
-  transition-duration: 7.700865265760197s;
-}
-.dropdown {
-  transition-duration: 9.604449938195302s;
-}
-.e-commerce {
-  transition-duration: 10.556242274412854s;
-}
-.flocked {
-  transition-duration: 18.986402966625462s;
-}
-.fylo {
-  transition-duration: 32.48454882571075s;
-}
-.grid-component {
-  transition-duration: 23.189122373300368s;
-}
-.huddle {
-  transition-duration: 46.600741656365884s;
-}
-.moz {
-  transition-duration: 90s;
-}
-.nft-component {
-  transition-duration: 7.700865265760197s;
-}
-.order-summary {
-  transition-duration: 7.700865265760197s;
-}
-.price-component {
-  transition-duration: 10.778739184177997s;
-}
-.qr-code-component {
-  transition-duration: 7.700865265760197s;
-}
-.r3 {
-  transition-duration: 73.47342398022249s;
-}
-.rating-component {
-  transition-duration: 7.700865265760197s;
-}
-.space {
-  transition-duration: 9.159456118665018s;
-}
-.stats-preview-card {
-  transition-duration: 13.485784919653893s;
-}
-
-@media screen and (max-width: 1080px) {
+@media (max-width: 1080px) {
   .work {
     padding: 0;
   }
 }
-@media screen and (max-width: 599px) {
+@media (max-width: 599px) {
   .work {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
@@ -131,19 +74,19 @@
     --project-height: 300px;
   }
 }
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
   .work-project-container {
     --project-height: 400px;
   }
 }
-@media screen and (max-width: 600px) and (min-width: 400px) {
+@media (max-width: 600px) and (min-width: 400px) {
   .work-project-container::before {
     width: clamp(75px, 18.75vw, 100px);
     height: clamp(75px, 18.75vw, 100px);
     font-size: 16px;
   }
 }
-@media screen and (hover: none) {
+@media (hover: none) {
   .work-project-container::before {
     content: "Click to view the project";
     border-radius: 0 0 24px 24px;

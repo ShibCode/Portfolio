@@ -1,12 +1,17 @@
 import React from "react";
+import getTransitionDuration from "../../utils/getTransitionDuration";
 
-export default function Project({ project, projectClass, projectLink, sno }) {
-  const classes = `work-project ${projectClass}`;
-
+export default function Project({ img, link }) {
   return (
-    <a href={projectLink} className="work-project-container" target="_blank">
+    <a href={link} className="work-project-container" target="_blank">
       <div className="overlay"></div>
-      <img src={project} className={classes} />
+      <img
+        src={img}
+        className="work-project"
+        style={{
+          transitionDuration: getTransitionDuration(img),
+        }}
+      />
     </a>
   );
 }

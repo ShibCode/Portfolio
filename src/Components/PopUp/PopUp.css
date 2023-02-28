@@ -1,0 +1,27 @@
+.pop-up {
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: -100%;
+  width: 250px;
+  font-family: "Open Sans", sans-serif;
+  background-color: black;
+  transition: all 0.4s;
+  padding: 16px;
+  z-index: 10;
+  color: white;
+}
+
+.show-pop-up {
+  right: 50px;
+}
+
+.move-pop-up-1 {
+  bottom: 110px;
+}
+
+@media (max-width: 1080px) {
+  .show-pop-up {
+    right: 25px;
+  }
+}
