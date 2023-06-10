@@ -111,6 +111,9 @@ export default function Home() {
         </div>
         <section className="projects-gallery">
           {projects.slice(0, 6).map(({ projectImg, projectLink }, index) => {
+            const transitionDuration = getTransitionDuration(projectImg);
+            if (transitionDuration === "0s") location.reload();
+
             return (
               <a
                 key={index}
@@ -118,7 +121,7 @@ export default function Home() {
                 className="project"
                 style={{
                   backgroundImage: `url('${projectImg}')`,
-                  transitionDuration: getTransitionDuration(projectImg),
+                  transitionDuration: transitionDuration,
                 }}
                 target="blank"
               ></a>
