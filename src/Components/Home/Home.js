@@ -5,7 +5,6 @@ import { faEnvelope, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { letterAnimation } from "../../utils/animation";
 import projects from "../../projects.json";
-import getTransitionDuration from "../../utils/getTransitionDuration";
 import "./Home.css";
 import "../../utils.css";
 
@@ -110,23 +109,22 @@ export default function Home() {
           </Link>
         </div>
         <section className="projects-gallery">
-          {projects.slice(0, 6).map(({ projectImg, projectLink }, index) => {
-            const transitionDuration = getTransitionDuration(projectImg);
-            if (transitionDuration === "0s") location.reload();
-
-            return (
-              <a
-                key={index}
-                href={projectLink}
-                className="project"
-                style={{
-                  backgroundImage: `url('${projectImg}')`,
-                  transitionDuration: transitionDuration,
-                }}
-                target="blank"
-              ></a>
-            );
-          })}
+          {projects
+            .slice(0, 6)
+            .map(({ projectImg, projectLink, transitionDuration }, index) => {
+              return (
+                <a
+                  key={index}
+                  href={projectLink}
+                  className="project"
+                  style={{
+                    backgroundImage: `url('${projectImg}')`,
+                    transitionDuration,
+                  }}
+                  target="blank"
+                ></a>
+              );
+            })}
         </section>
       </section>
       <section className="section3">

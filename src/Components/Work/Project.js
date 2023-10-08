@@ -1,7 +1,6 @@
-import React from "react";
-import getTransitionDuration from "../../utils/getTransitionDuration";
+// transitionDuration = height / 100
 
-export default function Project({ img, link }) {
+export default function Project({ img, link, transitionDuration }) {
   return (
     <a href={link} className="work-project-container" target="_blank">
       <div className="overlay"></div>
@@ -9,7 +8,7 @@ export default function Project({ img, link }) {
         src={img}
         className="work-project"
         style={{
-          transitionDuration: getTransitionDuration(img),
+          transitionDuration,
         }}
       />
     </a>

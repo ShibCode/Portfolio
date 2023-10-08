@@ -5,6 +5,7 @@
   min-height: 100vh;
   padding-left: calc(150px + 5rem);
   padding-right: 5rem;
+  padding-block: 5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -94,6 +95,14 @@
 .react::before {
   width: 75%;
   background-color: #08fdd8;
+}
+.tailwind::before {
+  width: 80%;
+  background-color: #38bdf8;
+}
+.next::before {
+  width: 70%;
+  background-color: #ffff00;
 }
 
 @media (max-width: 1080px) {

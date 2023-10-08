@@ -34,10 +34,10 @@ export default function Skill() {
           <span className="letter">e</span>
         </h1>
         <p className="para skill-para">
-          I have started off my web development journey nearly 4 months ago. I
-          have made several projects for practicing my skills through cloning
-          websites and taking on various different challenges from Front End
-          Mentor.
+          I started off my web development journey a year ago. I have some
+          experience working on actual projects for my clients. Apart from this,
+          I have cloned multiple websites and have took on various different
+          challenges from Front End Mentor to polish my skills.
           <br /> <br />I create successful responsive websites that are fast and
           easy to use. The main area of my expertise is front-end development,
           HTML, CSS, JS, building small and medium web apps, custom plugins,
@@ -74,6 +74,14 @@ export default function Skill() {
         <div className="skill-bar">
           React
           <div className="bar react"></div>
+        </div>
+        <div className="skill-bar">
+          Tailwind CSS
+          <div className="bar tailwind"></div>
+        </div>
+        <div className="skill-bar">
+          Next.js
+          <div className="bar next"></div>
         </div>
       </div>
     </div>
