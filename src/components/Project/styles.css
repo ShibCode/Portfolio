@@ -1,31 +1,26 @@
-.work {
-  background-color: rgba(29, 29, 29, 1);
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  padding-left: 150px;
-  min-height: 100vh;
-}
-.work-project-container {
+.project-container {
   --project-height: 400px;
   height: var(--project-height);
   overflow: hidden;
   position: relative;
   transform-origin: left;
-  transform: scaleX(1.001);
   user-select: none;
 }
-.work-project {
+.project-container > img {
+  height: max-content;
   width: 100%;
   transition: all 0s ease;
   transition-delay: 0.5s;
 }
-.work-project-container:hover .work-project {
+
+.project:hover {
   transform: translateY(calc(-100% + var(--project-height)));
 }
-.work-project-container::before {
+
+.project-container::before {
   --scale: 0;
 
+  pointer-events: none;
   content: "View Project";
   display: flex;
   justify-content: center;
@@ -46,7 +41,7 @@
   transition: all 0.25s ease;
   color: black;
 }
-.work-project-container:hover::before {
+.project-container:hover::before {
   --scale: 1;
 }
 .overlay {
@@ -56,38 +51,21 @@
   opacity: 0;
   z-index: 1;
   transition: all 0.25s ease;
+  pointer-events: none;
 }
-.work-project-container:hover .overlay {
+.project-container:hover .overlay {
   opacity: 0.4;
 }
 
-@media (max-width: 1080px) {
-  .work {
-    padding: 0;
-  }
-}
-@media (max-width: 599px) {
-  .work {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-  .work-project-container {
-    --project-height: 300px;
-  }
-}
-@media (max-width: 400px) {
-  .work-project-container {
-    --project-height: 400px;
-  }
-}
 @media (max-width: 600px) and (min-width: 400px) {
-  .work-project-container::before {
+  .project-container::before {
     width: clamp(75px, 18.75vw, 100px);
     height: clamp(75px, 18.75vw, 100px);
     font-size: 16px;
   }
 }
 @media (hover: none) {
-  .work-project-container::before {
+  .project-container::before {
     content: "Click to view the project";
     border-radius: 0 0 24px 24px;
     top: 0;

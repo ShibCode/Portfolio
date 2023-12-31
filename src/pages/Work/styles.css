@@ -1,0 +1,19 @@
+.work {
+  background-color: rgba(29, 29, 29, 1);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding-left: 150px;
+  min-height: 100vh;
+}
+
+@media (max-width: 1080px) {
+  .work {
+    padding: 0;
+  }
+}
+@media (max-width: 599px) {
+  .work {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

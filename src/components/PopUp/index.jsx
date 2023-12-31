@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "./PopUp.css";
+import "./styles.css";
 
 export default function PopUp() {
   useEffect(() => {

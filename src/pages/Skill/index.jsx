@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 import { letterAnimation } from "../../utils/animation";
-import "./Skill.css";
+import useTitle from "../../hooks/useTitle";
+import "./styles.css";
 
 export default function Skill() {
-  useEffect(() => {
-    document.title = "Skills and Experience";
+  useTitle("Skills and Experience");
 
+  useEffect(() => {
     const letters = document.querySelectorAll(".letter");
     const letterArr = [letters];
     letterAnimation(letterArr, letters);

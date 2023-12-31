@@ -1,36 +1,21 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Nav.css";
 import { faBars, faClose, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./styles.css";
 
-export default function Nav() {
+export default function Header() {
   let [isOpen, updateIsOpen] = useState(false);
-  let navBarClasses = `nav-bar ${isOpen ? "slide-nav" : ""}`;
-  let hamMenuClasses = `hammenu-btn-img ${isOpen ? "" : "show"}`;
-  let crossClasses = `hammenu-btn-img ${isOpen ? "show" : ""}`;
 
   return (
     <>
-      <button
-        className="hammenu-btn"
-        onClick={() => {
-          updateIsOpen(!isOpen);
-        }}
-      >
-        <FontAwesomeIcon icon={faBars} className={hamMenuClasses} />
-        <FontAwesomeIcon icon={faClose} className={crossClasses} />
+      <button className="hammenu-btn" onClick={() => updateIsOpen(!isOpen)}>
+        <FontAwesomeIcon icon={isOpen ? faClose : faBars} />
       </button>
-      <nav className={navBarClasses}>
+      <nav className={`nav-bar ${isOpen ? "slide-nav" : ""}`}>
         <div className="nav-bar-top">
-          <Link
-            to="/"
-            className="name"
-            onClick={() => {
-              updateIsOpen(false);
-            }}
-          >
+          <Link to="/" className="name" onClick={() => updateIsOpen(false)}>
             Shoaib Afzaal
           </Link>
           <p className="title">Web Developer</p>
@@ -39,27 +24,21 @@ export default function Nav() {
           <Link
             to="/about"
             className="nav-link"
-            onClick={() => {
-              updateIsOpen(false);
-            }}
+            onClick={() => updateIsOpen(false)}
           >
             About
           </Link>
           <Link
             to="/skills"
             className="nav-link"
-            onClick={() => {
-              updateIsOpen(false);
-            }}
+            onClick={() => updateIsOpen(false)}
           >
             Skills
           </Link>
           <Link
             to="/work"
             className="nav-link"
-            onClick={() => {
-              updateIsOpen(false);
-            }}
+            onClick={() => updateIsOpen(false)}
           >
             Work
           </Link>

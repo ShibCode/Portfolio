@@ -14,7 +14,7 @@
   align-items: center;
   height: 100vh;
   z-index: 10;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease-in-out;
 }
 .nav-bar-top {
   background-color: black;
@@ -85,8 +85,7 @@
   display: block;
 }
 .slide-nav {
-  top: 0 !important;
-  opacity: 1 !important;
+  translate: 0 0 !important;
 }
 .nav-socials {
   width: 100%;
@@ -108,8 +107,7 @@
 @media (max-width: 1080px) {
   .nav-bar {
     width: 100%;
-    top: -100%;
-    opacity: 0;
+    translate: 0 -100%;
   }
   .nav-bar-top {
     padding: 3rem 0;
