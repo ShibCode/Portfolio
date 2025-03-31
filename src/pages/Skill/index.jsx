@@ -35,28 +35,25 @@ export default function Skill() {
           <span className="letter">e</span>
         </h1>
         <p className="para skill-para">
-          I started off my web development journey a year ago. I have some
-          experience working on actual projects for my clients. Apart from this,
-          I have cloned multiple websites and have took on various different
-          challenges from Front End Mentor to polish my skills.
-          <br /> <br />I create successful responsive websites that are fast and
-          easy to use. The main area of my expertise is front-end development,
-          HTML, CSS, JS, building small and medium web apps, custom plugins,
-          features, animations, and coding interactive layouts.
-          <br />
-          <br />
-          Vist my{" "}
+          My web development journey started over two years ago, growing from
+          basic websites to more structured and interactive projects. I have
+          worked with clients on various web applications and enjoy
+          experimenting with new technologies to improve user experiences.
+          <br /> <br />
+          My expertise lies in front-end development, with a focus on JavaScript
+          frameworks, animations, and building responsive, user-friendly
+          interfaces. I also enjoy working with tools like GSAP and Three.js to
+          add creative touches to websites.
+          <br /> <br />
+          Check out my{" "}
           <a href="https://github.com/ShibCode?tab=repositories" target="blank">
-            Github
+            GitHub
           </a>{" "}
-          for viewing my work or just{" "}
-          <a
-            href="https://mail.google.com/mail/u/0/?to=shoaibafzaal1234@gmail.com&fs=1&tf=cm"
-            target="blank"
-          >
-            contact
+          to see my work, or feel free to{" "}
+          <a href="mailto:shoaibafzaal1234@gmail.com" target="blank">
+            contact me
           </a>{" "}
-          me
+          for any opportunities.
         </p>
       </div>
       <div className="skill-right">
@@ -69,20 +66,32 @@ export default function Skill() {
           <div className="bar css"></div>
         </div>
         <div className="skill-bar">
+          Tailwind CSS
+          <div className="bar tailwind"></div>
+        </div>
+        <div className="skill-bar">
           Javascript
           <div className="bar js"></div>
+        </div>
+        <div className="skill-bar">
+          Typescript
+          <div className="bar ts"></div>
         </div>
         <div className="skill-bar">
           React
           <div className="bar react"></div>
         </div>
         <div className="skill-bar">
-          Tailwind CSS
-          <div className="bar tailwind"></div>
-        </div>
-        <div className="skill-bar">
           Next.js
           <div className="bar next"></div>
+        </div>
+        <div className="skill-bar">
+          GSAP
+          <div className="bar gsap"></div>
+        </div>
+        <div className="skill-bar">
+          Three.js
+          <div className="bar three"></div>
         </div>
       </div>
     </div>

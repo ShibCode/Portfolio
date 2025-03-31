@@ -34,10 +34,8 @@
 }
 
 .contact-btn {
-  opacity: 0;
   margin-top: 1.5rem;
-  transform: translateY(50px);
-  animation: fadeUp 0.5s ease 2s 1 forwards;
+  animation: fadeUp 0.5s ease 1.5s both;
 }
 
 .show-letter {
@@ -70,9 +68,7 @@
   font-size: 20px;
   letter-spacing: 4px;
   margin-top: 4px;
-  transform: translateY(50px);
-  opacity: 0;
-  animation: fadeUp 0.5s ease 2s 1 forwards;
+  animation: fadeUp 0.5s ease 1.5s both;
 }
 
 .section1-title::before {
@@ -332,13 +328,6 @@
 
   100% {
     transform: scale(1);
-  }
-}
-
-@keyframes fadeUp {
-  100% {
-    transform: translateY(0);
-    opacity: 1;
   }
 }
 

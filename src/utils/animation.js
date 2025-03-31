@@ -8,7 +8,7 @@ export function letterAnimation(lettersArr, allLetters) {
         setTimeout(() => {
           letter.classList.remove("animate-enter");
         }, 600);
-      }, index * 100);
+      }, index * 80);
     });
   });
 

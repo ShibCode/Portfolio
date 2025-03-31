@@ -37,9 +37,9 @@ export default function PopUp() {
   return (
     <>
       <div className="pop-up pop-up-1">
-        Please note that this design is not mine
+        Please note that this design is not my own.
       </div>
-      <div className="pop-up pop-up-2">Only the code is</div>
+      <div className="pop-up pop-up-2">Only the code was written by me.</div>
     </>
   );
 }

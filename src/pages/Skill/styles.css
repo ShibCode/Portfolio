@@ -30,6 +30,7 @@
   color: white;
   max-width: 525px;
   line-height: 26px;
+  animation: fadeUp 0.5s ease 1.3s both;
 }
 .skill a {
   color: #08fdd8;
@@ -54,7 +55,7 @@
 .skill-right {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
   color: white;
   font-family: sans-serif;
   font-weight: 600;
@@ -79,30 +80,75 @@
   bottom: 0;
   left: 0;
   right: 0;
+  animation: scaleRight 1.5s cubic-bezier(0.39, 0.81, 0.48, 0.98) forwards;
+  opacity: 0;
 }
+
 .html::before {
   background-color: #08fdd8;
-  width: 90%;
+  width: 95%;
+  animation-delay: 0.1s;
 }
+
 .css::before {
-  width: 80%;
+  width: 90%;
   background-color: rgb(255, 34, 83);
+  animation-delay: 0.2s;
 }
-.js::before {
-  width: 75%;
-  background-color: rgb(210, 108, 213);
-}
-.react::before {
-  width: 75%;
-  background-color: #08fdd8;
-}
+
 .tailwind::before {
-  width: 80%;
+  width: 90%;
   background-color: #38bdf8;
+  animation-delay: 0.3s;
 }
-.next::before {
+
+.js::before {
+  width: 88%;
+  background-color: rgb(210, 108, 213);
+  animation-delay: 0.4s;
+}
+
+.ts::before {
   width: 70%;
+  background-color: rgb(50, 130, 230);
+  animation-delay: 0.5s;
+}
+
+.react::before {
+  width: 80%;
+  background-color: #08fdd8;
+  animation-delay: 0.6s;
+}
+
+.next::before {
+  width: 55%;
   background-color: #ffff00;
+  animation-delay: 0.7s;
+}
+
+.gsap::before {
+  width: 80%;
+  background-color: #43ed5c;
+  animation-delay: 0.8s;
+}
+
+.three::before {
+  width: 30%;
+  background-color: #915eff;
+  animation-delay: 0.9s;
+}
+
+@keyframes scaleRight {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+    transform-origin: left;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+    transform-origin: left;
+  }
 }
 
 @media (max-width: 1080px) {

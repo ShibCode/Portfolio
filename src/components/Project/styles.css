@@ -17,31 +17,32 @@
   transform: translateY(calc(-100% + var(--project-height)));
 }
 
-.project-container::before {
+.project-popup {
   --scale: 0;
+  --size: 150px;
 
   pointer-events: none;
-  content: "View Project";
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1rem;
-  width: 125px;
-  height: 125px;
+  width: var(--size);
+  height: var(--size);
   font-size: 20px;
   font-family: "Inconsolata";
   background-color: #08fdd8;
   border-radius: 50%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(var(--scale));
+  top: 0;
+  right: 0;
+  padding: calc(var(--size) * 0.35) calc(var(--size) * 0.35) 0px 0px;
+  transform: translate(50%, -50%) scale(var(--scale));
   z-index: 10;
   transition: all 0.25s ease;
+  transform-origin: "top right";
   color: black;
 }
-.project-container:hover::before {
+.project-container:hover .project-popup {
   --scale: 1;
 }
 .overlay {
@@ -58,14 +59,14 @@
 }
 
 @media (max-width: 600px) and (min-width: 400px) {
-  .project-container::before {
+  .project-popup {
     width: clamp(75px, 18.75vw, 100px);
     height: clamp(75px, 18.75vw, 100px);
     font-size: 16px;
   }
 }
 @media (hover: none) {
-  .project-container::before {
+  .project-popup {
     content: "Click to view the project";
     border-radius: 0 0 24px 24px;
     top: 0;

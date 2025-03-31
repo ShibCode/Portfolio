@@ -1,5 +1,24 @@
 [
   {
+    "video": "/Project Videos/brewdistrict.webm",
+    "playbackRate": 0.5,
+    "link": "https://brewdistrict-clone.vercel.app/"
+  },
+  {
+    "video": "/Project Videos/sombra-network.webm",
+    "playbackRate": 0.5,
+    "link": "https://sombra-network-website.vercel.app/"
+  },
+  {
+    "video": "/Project Videos/loconiq.mov",
+    "link": "https://watch-website-mu.vercel.app/"
+  },
+  {
+    "video": "/Project Videos/flymasters.webm",
+    "playbackRate": 1,
+    "link": "https://flymasters.vercel.app/"
+  },
+  {
     "img": "/Project Screenshots/promax.jpeg",
     "link": "https://promax.vercel.app/"
   },
@@ -38,57 +57,5 @@
   {
     "img": "/Project Screenshots/R3.png",
     "link": "https://r3-com-clone.vercel.app"
-  },
-  {
-    "img": "/Project Screenshots/flocked.jpeg",
-    "link": "https://flocked-landing-clone.vercel.app"
-  },
-  {
-    "img": "/Project Screenshots/clipboard.jpeg",
-    "link": "https://clipboard-landing-page-shibcode.vercel.app"
-  },
-  {
-    "img": "/Project Screenshots/fylo.jpeg",
-    "link": "https://fylo-landing-page-tawny.vercel.app"
-  },
-  {
-    "img": "/Project Screenshots/huddle.jpeg",
-    "link": "https://huddle-landing-page-gilt.vercel.app"
-  },
-  {
-    "img": "/Project Screenshots/grid-component.jpeg",
-    "link": "https://testimonial-grid-section-umber.vercel.app"
-  },
-  {
-    "img": "/Project Screenshots/nft-component.jpeg",
-    "link": "https://nft-preview-card-shibcode.vercel.app"
-  },
-  {
-    "img": "/Project Screenshots/data-storage-component.jpeg",
-    "link": "https://data-storage-component-iota.vercel.app"
-  },
-  {
-    "img": "/Project Screenshots/dropdown.jpeg",
-    "link": "https://intro-section-with-dropdown.vercel.app"
-  },
-  {
-    "img": "/Project Screenshots/order-summary.jpeg",
-    "link": "https://order-summary-five-chi.vercel.app"
-  },
-  {
-    "img": "/Project Screenshots/price-component.jpeg",
-    "link": "https://single-price-grid-component-shibcode.vercel.app"
-  },
-  {
-    "img": "/Project Screenshots/rating-component.jpeg",
-    "link": "https://rating-component-five.vercel.app"
-  },
-  {
-    "img": "/Project Screenshots/stats-preview-card.jpeg",
-    "link": "https://stats-preview-card-zeta.vercel.app"
-  },
-  {
-    "img": "/Project Screenshots/qr-code-component.jpeg",
-    "link": "https://qr-code-tau.vercel.app"
   }
 ]

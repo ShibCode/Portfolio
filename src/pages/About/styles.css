@@ -25,6 +25,7 @@
   color: white;
   max-width: 500px;
   line-height: 26px;
+  animation: fadeUp 0.5s ease 0.75s both;
 }
 
 @media (max-width: 1080px) {
