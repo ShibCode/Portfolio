@@ -3,7 +3,7 @@ import "./styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
-const Project = ({ link, img, poster, video, playbackRate = 1 }) => {
+const Project = ({ link, img, video, playbackRate = 1 }) => {
   const videoRef = useRef();
 
   const setProjectTransition = (e) => {
