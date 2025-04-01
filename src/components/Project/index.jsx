@@ -3,10 +3,12 @@ import "./styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
-const Project = ({ link, img, video, playbackRate = 1 }) => {
+const Project = ({ link, img, animated, video, playbackRate = 1 }) => {
   const videoRef = useRef();
 
   const setProjectTransition = (e) => {
+    if (!animated) return;
+
     const { style, clientHeight } = e.target;
     style.transitionDuration = `${clientHeight / 100}s`;
     e.target.classList.add("project");
@@ -44,7 +46,13 @@ const Project = ({ link, img, video, playbackRate = 1 }) => {
       </div>
 
       <div className="overlay"></div>
-      {img && <img src={img} onLoad={setProjectTransition} />}
+      {img && (
+        <img
+          src={img}
+          className={animated ? "project-animated" : "project-static"}
+          onLoad={setProjectTransition}
+        />
+      )}
       {video && (
         <video
           ref={videoRef}

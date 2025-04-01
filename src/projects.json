@@ -5,6 +5,11 @@
     "link": "https://brewdistrict-clone.vercel.app/"
   },
   {
+    "video": "/Project Videos/fet.webm",
+    "playbackRate": 1,
+    "link": "https://flm-courses.vercel.app/"
+  },
+  {
     "video": "/Project Videos/sombra-network.webm",
     "playbackRate": 0.5,
     "link": "https://sombra-network-website.vercel.app/"
@@ -19,43 +24,61 @@
     "link": "https://flymasters.vercel.app/"
   },
   {
+    "img": "/Project Screenshots/chess.webp",
+    "link": "https://pawns-playground.vercel.app/"
+  },
+  {
+    "img": "/Project Screenshots/skribble.jpeg",
+    "link": "https://skribble-two.vercel.app/"
+  },
+  {
     "img": "/Project Screenshots/promax.jpeg",
+    "animated": true,
     "link": "https://promax.vercel.app/"
   },
   {
     "img": "/Project Screenshots/uniswap.jpeg",
+    "animated": true,
     "link": "https://uni-swap-eight.vercel.app/"
   },
   {
     "img": "/Project Screenshots/soilddao.jpeg",
+    "animated": true,
     "link": "https://soild-dao.vercel.app/"
   },
   {
     "img": "/Project Screenshots/buddhalo.jpeg",
+    "animated": true,
     "link": "https://buddhalo.vercel.app"
   },
   {
     "img": "/Project Screenshots/bcluxury.jpeg",
+    "animated": true,
     "link": "https://bc-luxury-clone.vercel.app"
   },
   {
     "img": "/Project Screenshots/pints.jpeg",
+    "animated": true,
     "link": "https://friends-bay.vercel.app"
   },
   {
     "img": "/Project Screenshots/e-commerce.jpeg",
+    "animated": true,
     "link": "https://e-commerce-website-eosin.vercel.app"
   },
   {
     "img": "/Project Screenshots/space.jpeg",
+    "animated": true,
     "link": "https://space-tourism-website-hazel.vercel.app"
   },
   {
     "img": "/Project Screenshots/moz.jpeg",
+    "animated": true,
     "link": "https://moz-clone.vercel.app"
   },
   {
     "img": "/Project Screenshots/R3.png",
+    "animated": true,
     "link": "https://r3-com-clone.vercel.app"
   }
 ]
