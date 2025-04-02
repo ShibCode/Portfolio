@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import projects from "../../projects.json";
 import { Link } from "react-router-dom";
 import Project from "../../components/Project";
 
 const Projects = () => {
+  const [maxProjects, setMaxProjects] = useState(6);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const projects = document.querySelector("#home-projects");
+      const columns =
+        getComputedStyle(projects).gridTemplateColumns.split(" ").length;
+
+      if (columns <= 3) setMaxProjects(6);
+      else if (columns === 4) setMaxProjects(8);
+      else if (columns === 5) setMaxProjects(10);
+      else setMaxProjects(columns);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <section className="section2">
       <h1 className="section2-heading heading">
@@ -33,8 +55,8 @@ const Projects = () => {
           See more!
         </Link>
       </div>
-      <section className="projects-gallery">
-        {projects.slice(0, 6).map((project, index) => (
+      <section id="home-projects" className="projects-gallery">
+        {projects.slice(0, maxProjects).map((project, index) => (
           <Project key={index} {...project} />
         ))}
       </section>

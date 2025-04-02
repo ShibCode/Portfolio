@@ -15,6 +15,19 @@
     "link": "https://sombra-network-website.vercel.app/"
   },
   {
+    "img": "/Project Screenshots/monkeytype.jpg",
+    "link": "https://monkey-type-clone.vercel.app/"
+  },
+  {
+    "img": "/Project Screenshots/chess.webp",
+    "link": "https://pawns-playground.vercel.app/"
+  },
+  {
+    "video": "/Project Videos/sombra-labs.webm",
+    "playbackRate": 1,
+    "link": "https://sombra-labs-website-renew.vercel.app/"
+  },
+  {
     "video": "/Project Videos/loconiq.mov",
     "link": "https://watch-website-mu.vercel.app/"
   },
@@ -24,22 +37,18 @@
     "link": "https://flymasters.vercel.app/"
   },
   {
-    "img": "/Project Screenshots/chess.webp",
-    "link": "https://pawns-playground.vercel.app/"
-  },
-  {
     "img": "/Project Screenshots/skribble.jpeg",
     "link": "https://skribble-two.vercel.app/"
   },
   {
-    "img": "/Project Screenshots/promax.jpeg",
-    "animated": true,
-    "link": "https://promax.vercel.app/"
+    "video": "/Project Videos/mineai.webm",
+    "playbackRate": 1,
+    "link": "https://mineai-wheat.vercel.app/"
   },
   {
-    "img": "/Project Screenshots/uniswap.jpeg",
+    "img": "/Project Screenshots/buddhalo.jpeg",
     "animated": true,
-    "link": "https://uni-swap-eight.vercel.app/"
+    "link": "https://buddhalo.vercel.app"
   },
   {
     "img": "/Project Screenshots/soilddao.jpeg",
@@ -47,9 +56,9 @@
     "link": "https://soild-dao.vercel.app/"
   },
   {
-    "img": "/Project Screenshots/buddhalo.jpeg",
+    "img": "/Project Screenshots/promax.jpeg",
     "animated": true,
-    "link": "https://buddhalo.vercel.app"
+    "link": "https://promax.vercel.app/"
   },
   {
     "img": "/Project Screenshots/bcluxury.jpeg",
